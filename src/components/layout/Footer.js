@@ -15,7 +15,6 @@ const Footer = () =>(
         </div>
         <div>
             <p>Copyright &copy; {new Date().getFullYear()} Federal Government Academy, Suleja - All Rights Reserved.</p>
-            <p>Powered by <a href="https://domstech.com" target="_blank" rel="noopener noreferrer">Domstech</a></p>
         </div>
     </footer>
 );
