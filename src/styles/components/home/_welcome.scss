@@ -1,0 +1,126 @@
+.welcome {
+    h3:first-child {
+        color: $primary-color;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    p:nth-child(2) {
+        color: $secondary-color;
+        font-size: $sm-font;
+        margin: $sm-font auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .advert {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: $xlg-font;
+        margin-top: $xxlg;
+        padding-left: $xlg-font;
+        padding-right: $xlg-font;
+    }
+
+    .advert div {
+        background-color: transparentize($primary-color, 0.95);
+        border-radius: 5px;
+        padding-bottom: $sm;
+        transition: $transition;
+    }
+    .advert div:hover {
+        box-shadow: $shadow;
+    }
+
+    .advert div p:first-child {
+        display: inline-block;
+        position: relative;
+        left: 40%;
+        top: -50px;
+    }
+
+    .advert div span::before {
+        background-color: $secondary-color;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        color: $white;
+        font-size: $xxxlg-font;
+        text-align: center;
+        width: $xxlg;
+        height: $xxlg;
+    }
+
+    .advert div h5 {
+        text-align: center;
+        font-weight: 400;
+        margin-top: -$xs-font;
+    }
+
+    .advert div p:last-child {
+        margin-left: $sm;
+        margin-right: $sm;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $lg-breakpoint) {
+    .welcome .advert div h4 {
+        font-size: $lg-font;
+    }
+
+    .welcome .advert div p:first-child {
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    .welcome {
+        padding-top: $sm-font;
+    }
+    .welcome h3:first-child {
+        font-size: $lg-font;
+    }
+
+    .welcome p:nth-child(2) {
+        width: 80%;
+    }
+
+    .welcome .advert {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome .advert div {
+        margin: 0 auto $xxlg auto;
+        width: 80%;
+    }
+
+    .welcome .advert div p:first-child {
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .welcome h3:first-child {
+        font-size: $sm-font;
+        text-transform: uppercase;
+    }
+
+    .welcome p:nth-child(2) {
+        width: 95%;
+    }
+
+    .welcome .advert {
+        padding-left: $sm;
+        padding-right: $sm;
+    }
+    
+    .welcome .advert div {
+        margin: 0 auto $xxlg auto;
+        width: 100%;
+    }
+
+    .welcome .advert div p:first-child {
+        left: 38%;
+    }
+}

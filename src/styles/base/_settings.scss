@@ -1,0 +1,53 @@
+// Font families
+$quicksand: 'Quicksand', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-mono: 'Roboto Mono', monospace;
+
+// Sizes
+$xs: 0.5rem;
+$normal: 1rem;
+$sm: 1.5rem;
+$md: 2rem;
+$lg: 3rem;
+$xlg: 5rem;
+$xxlg: 7rem;
+$xxxlg: 10rem;
+
+// Font Sizes
+$xs-font: 0.8em;
+$sm-font: 1.2em;
+$normal-font: 1em;
+$md-font: 1.5em;
+$lg-font: 2em;
+$xlg-font: 3em;
+$xxlg-font: 4em;
+$xxxlg-font: 5em;
+
+// Breakpoints
+$lg-breakpoint: 1024px;
+$md-breakpoint: 768px;
+$sm-breakpoint: 640px;
+$xs-breakpoint: 480px;
+
+// Colors
+$primary-color:#005717;
+$secondary-color:#333333;
+$tertiary-color:#e0e000;
+$blue: #1da1f2;
+$green: #57b846;
+$red: #ea4335;
+$orange: #ffa500;
+$success-text: #4caf50;
+$error-text: #F44336;
+$white: #fff;
+$off-white: #f8f8f8;
+$black: #000;
+$gray: #c8c8c8;
+$dark-gray: #1f1f1f;
+$link-color: #039be5;
+
+// Shadow
+$shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+$lg-shadow: 0 2px 20px 0 rgba(0,0,0,0.14), 0 3px 20px -2px rgba(0,0,0,0.12), 0 1px 20px 0 rgba(0,0,0,0.2);
+
+$transition: 0.3s linear all;

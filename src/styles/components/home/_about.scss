@@ -1,0 +1,48 @@
+.about-school {
+    background-image: url('../../../assets/img/slide5.JPG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+
+    h4 {
+        font-weight: 500;
+    }
+
+    .about-container {
+        background-color: transparentize($primary-color, 0.2);
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding: $md $lg;
+    }
+
+    .about-container div .last-paragraph {
+        margin-bottom: $lg;
+    }
+
+    .about-container div a {
+        padding-left: $sm;
+        padding-right: $sm;
+    }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    .about-school .about-container {
+        grid-template-columns: 1.5fr 2fr;
+       
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .about-school .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-school .about-container h4 {
+        text-align: center;
+    }
+} 
+

@@ -1,0 +1,53 @@
+.contact {
+    margin-bottom: $xxxlg-font;
+
+    h5 {
+        margin-bottom: $lg-font;
+        text-align: center;
+    }
+    div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: $xxlg-font;
+        padding-right: $xxlg-font;
+        padding-left: $xxlg-font;
+    }
+
+    div a.contact-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: $shadow;
+        padding: $xlg-font $lg-font;
+        transition: $transition;
+        text-align: center;
+    }
+
+    div a.contact-link:hover {
+        box-shadow: $lg-shadow;
+    }
+
+    span {
+        color: $secondary-color;
+        font-size: $xxlg-font;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    .contact div {
+        grid-template-columns: 1fr;
+        row-gap: $xxlg-font;
+        padding-right: $xxlg-font;
+        padding-left: $xxlg-font;
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .contact div {
+        padding-right: $lg-font;
+        padding-left: $lg-font;
+    }
+}

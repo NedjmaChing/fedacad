@@ -1,0 +1,130 @@
+.about-fedacad {
+    padding-left: $xlg-font;
+    padding-right: $xlg-font;
+
+    
+    h4{
+        margin-bottom: $md;
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: $sm;
+    }
+
+    li{
+        margin-left: $lg;
+        margin-bottom: $sm;
+    }
+
+    .mission-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: $xxlg-font;
+        row-gap: $xxlg-font;
+        margin-top: $xlg;
+    }
+
+    .mission-section div {
+        background-color: $primary-color;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        color: $off-white;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        padding: $sm-font;
+        
+    }
+
+    .mission-icon {
+        font-size: $xlg-font;
+    }
+
+    .mission-section div section h5 {
+        color:$white;
+        font-weight: bold;
+    }
+
+    .mission-section div section p {
+        color:darken($off-white, 10%);
+    }
+    
+    .principals {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: $lg 0;
+    }
+
+    .principals h6 {
+        font-weight: bold;
+    }
+
+    .principals ol li {
+        margin-left: -$xxlg-font;
+    }
+
+    .principal-dates {
+        width: 50%;
+        margin: $lg auto;
+    }
+
+    .principal-dates h6 {
+        font-weight: bold;
+        margin-bottom: $md;
+        text-align: center;
+    }
+
+    .principal-dates section {
+        display: grid;
+        grid-template-columns: 5fr 2fr 0.5fr 2fr;
+        padding-left: $sm-font;
+        padding-right: $sm-font;
+    }
+
+    .principal-dates section p {
+        margin-bottom: 0;
+        padding-bottom: $xs;
+        padding-top: $xs;
+    }
+
+    .principal-dates section:nth-child(even) {
+        background-color: darken($off-white, 10%);
+    }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    .about-fedacad {
+        h4 {
+            font-size: $sm;
+        }
+
+        .mission-section {
+            grid-template-columns: 1fr;
+
+            div {
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+
+        .principal-dates {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .about-fedacad {
+        padding-left: $xs;
+        padding-right: $xs;
+        
+        .principal-dates {
+            width: 90%;
+        }
+
+    }
+}

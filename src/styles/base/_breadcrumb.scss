@@ -1,0 +1,24 @@
+.breadcrumb-bar {
+    background-color: $white;
+    padding: $sm;
+
+    a:first-child {
+        color: lighten($secondary-color, 40%);
+    }
+
+    a:nth-child(3) {
+        color: $primary-color;
+        font-weight: 600;
+    }
+
+    h4 {
+        color: $primary-color;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .breadcrumb-bar h4 {
+        font-size: $md-font;
+    }
+}

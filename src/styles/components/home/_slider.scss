@@ -1,0 +1,128 @@
+.slider {
+    // font-family: $quicksand;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+
+    .slide {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity  0.4s ease-in-out;
+    }
+
+    .slide.current {
+        opacity: 1;
+    }
+
+    .slide .overlay {
+        background-color: transparentize($secondary-color, 0.7);
+        // position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay-schoolname {
+        color: $white;
+        font-weight: 700;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        top: 20%;
+    }
+
+    .overlay .subtitle {
+        color: darken($off-white, 10%);
+        font-weight: 300;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        top: 25%;
+    }
+
+    .slide .content {
+        position: absolute;
+        bottom: 30vh;
+        opacity: 0;
+        left: -600px;
+        width: 600px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+    }
+
+    .slide.current .content {
+        opacity: 1;
+        transform: translateX(600px);
+        transition: all 0.7s ease-in-out 0.3s;
+    }
+
+    .slide:first-child {
+        background-image: url('../../../assets/img/slide1.jpg');
+    }
+    .slide:nth-child(2) {
+        background-image: url('../../../assets/img/slide2.jpg');
+    }
+    .slide:nth-child(3) {
+        background-image: url('../../../assets/img/slide3.JPG');
+    }
+    .slide:nth-child(4) {
+        background-image: url('../../../assets/img/slide4.jpg');
+    }
+    .slide:nth-child(5) {
+        background-image: url('../../../assets/img/slide5.JPG');
+    }
+    .slide:last-child {
+        background-image: url('../../../assets/img/slide6.JPG');
+    }
+}
+
+button.slider-button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+button.slider-button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+button.slider-button {
+    color: $white;
+    border: 2px solid $white;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 13px 15px;
+    outline: none;
+}
+
+button.slider-button:hover {
+    background-color: transparentize($secondary-color, 0.3);
+    border-color: $secondary-color;
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slider-button {
+        display: none;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+}

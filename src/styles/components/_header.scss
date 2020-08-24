@@ -1,0 +1,205 @@
+header {
+    font-family: $quicksand;
+    scroll-snap-align: start;
+
+    .header-top {
+        background-color: $primary-color;
+        color: $off-white;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding-left: $lg;
+        padding-right: $lg;
+    }
+
+    .header-top div:first-child {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: $normal;
+        margin-bottom: $normal;
+    }
+
+    .header-top div:last-child {
+        padding: $normal $xs;
+    }
+
+    .auth-link {
+        color: $white;
+        margin-left: $sm;
+    }
+    .auth-link:visited {
+        color: $white;
+    }
+    .auth-link:hover {
+        color: $gray;
+    }
+    .auth-link:active {
+        color: $red;
+    }
+
+    .header-top div p {
+        display: inline-block;
+        margin-right: $md;
+    }
+
+    .header-top .login {
+        color: $white;
+    }
+    .header-top .login:visited {
+        color: $white;
+    }
+    .header-top .login:hover {
+        color: $gray;
+    }
+    .header-top .login:active {
+        color: $red;
+    }
+
+    .login-icon {
+        margin-right: 5px;
+    }
+
+    nav {
+        background-color: transparentize($primary-color, 0.3);
+        // background-color: transparentize($secondary-color, 0.3);
+        box-shadow: none;
+        padding-left: $xxlg;
+        padding-right: $xxlg;
+        transition: $transition;
+
+        h6 {
+            display: none;
+        }
+
+        .nav-wrapper a:nth-child(2) {
+            position: absolute;
+            top: 0;
+            margin-top: -$lg-font;
+        }
+
+        .logo {
+            width: $xxlg;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    nav.sticky {
+        .nav-wrapper a:nth-child(2) {
+            margin-top: -$xs;
+        }
+
+        .logo {
+            width: $lg-font;
+        }
+    }
+
+    nav ul li a {
+        color: darken($off-white, 20%) !important;
+        font-size: $normal-font;
+        font-weight: 600;
+        transition: $transition;
+    }
+
+    nav ul li a:visited {
+        color: darken($off-white, 20%) !important;
+    }
+
+    nav ul li a:hover {
+        background-color: transparent;
+        color: lighten($primary-color, 30%) !important;
+    }
+
+    nav ul li a.active-link {
+        color: lighten($primary-color, 30%) !important;
+    }
+
+    .sticky {
+        background-color: $primary-color;
+        box-shadow: $shadow;
+        position: fixed !important;
+        z-index: 3;
+        top: 0;
+        width: 100%;
+    }
+
+    .sidenav {
+        background-color: $primary-color !important;
+    }
+
+    .sidenav li a {
+        color: darken($off-white, 20%) !important;
+        border-left: 2px solid darken($primary-color, 5%);
+        transition: $transition;
+    }
+
+    .sidenav li a:hover {
+        background-color: darken($primary-color, 5%);
+    }
+
+    .active-mobile-link {
+        background-color: darken($primary-color, 5%);
+    }
+
+    .sidenav div {
+        border-bottom: 1px solid darken($white, 50%);
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .sidenav img {
+        border-radius: 50%;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .sidenav h5 {
+        font-size: $md-font;
+        font-weight: 500;
+        color: $white;
+    }
+
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    header .header-top {
+        display: none;
+    }
+
+    header nav {
+        padding-left: $sm-font;
+        padding-right: $sm-font;
+    }
+
+    header nav h6 {
+        display: block;
+        text-align: center;
+        font-size: $md;
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    header .header-top div:first-child {
+        flex-direction: column;
+    }
+    header .header-top div:last-child {
+        display: none;
+    }
+
+    header nav .nav-wrapper a:first-child {
+        position: relative;
+        top: -5;
+    }
+
+    header .sidenav h5 {
+        font-size: $normal;
+    }
+
+    header nav h6 {
+        font-size: $normal;
+        margin: 0;
+        margin-top: $sm;
+        position: absolute;
+        margin-left: $xxlg;
+    }
+}

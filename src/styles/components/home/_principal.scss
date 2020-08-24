@@ -1,0 +1,88 @@
+.principal {
+    background-color: $primary-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: $xlg;
+    padding-bottom: $lg;
+    padding-top: $lg;
+
+    div:first-child {
+        text-align: justify;
+        color: $white;
+        padding-left: $xxlg-font;
+    }
+
+    div:first-child h4 {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    div:first-child h5 {
+        color: $off-white;
+    }
+
+    div:first-child p {
+        color: darken($off-white, 10%);
+    }
+
+    div:last-child {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div:last-child img {
+        border: 10px solid lighten($primary-color, 5%);
+        justify-self: center;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        width: initial;
+        height: initial;
+    }
+
+    div:last-child h6 {
+        color: $white;
+        font-weight: 400;
+    }
+
+    div:last-child p {
+        color: $off-white;
+    }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    .principal {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .principal div:last-child {
+        margin-top: $lg;
+    }
+
+    .principal div:first-child {
+        padding-right: $xxlg-font;
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+    .principal div:first-child {
+        padding-left: $md-font;
+        padding-right: $md-font;
+    }
+
+    .principal div:first-child h4 {
+        text-align: center;
+    }
+
+    .principal div:last-child {
+        margin-top: $normal;
+    }
+
+    .principal div:last-child img {
+        width: 200px;
+        height: 200px;
+    }
+}
