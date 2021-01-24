@@ -20,90 +20,60 @@
         padding: $lg $sm;
         column-gap: $lg;
         row-gap: $lg;
-    }
 
-    .news-item {
-        padding-left: $sm;
-        padding-right: $sm;
-    }
+        article {
+            div:first-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-    article div:first-child {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    article img {
-        border-radius: 5px;
-        margin: 0 auto;
-        max-width: 70%;
-    }
+                img {
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    max-width: 70%;
+                }
+            }
 
-    article div:last-child h5 {
-        color: $primary-color;
-        cursor: pointer;
-        font-weight: 500;
-        margin-top: $md;
-        transition: $transition;
-        
-        // display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
+            div:last-child {
+                a {
+                    color: $primary-color;
+                    font-weight: 600;
+                    font-size: $sm;
+                    text-align: center;
+                }
 
-        display: -moz-box;
-        -moz-box-orient: vertical;
-        -moz-line-clamp: 2;
+                .title {
+                    color: $primary-color !important;
+                    cursor: pointer;
+                    font-weight: 500;
+                    font-size: $sm;
+                    margin-top: $md;
+                    transition: $transition;
 
-        display: -ms-box;
-        -ms-box-orient: vertical;
-        -ms-line-clamp: 2;
+                    overflow: hidden;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
 
-        display: -o-box;
-        -o-box-orient: vertical;
-        -o-line-clamp: 2;
+                h5:hover {
+                    text-decoration: underline;
+                }
 
-        display: box;
-        box-orient: vertical;
-        line-clamp: 2;
+                p:nth-child(2) {
+                    margin-bottom: $sm-font;
+                }
 
-        overflow: hidden;
-        text-transform: capitalize;
-    }
-
-    article div:last-child h5:hover {
-        color: $orange;
-    }
-
-    article div:last-child p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-
-        display: -moz-box;
-        -moz-box-orient: vertical;
-        -moz-line-clamp: 3;
-
-        display: -ms-box;
-        -ms-box-orient: vertical;
-        -ms-line-clamp: 3;
-
-        display: -o-box;
-        -o-box-orient: vertical;
-        -o-line-clamp: 3;
-
-        display: box;
-        box-orient: vertical;
-        line-clamp: 3;
-        overflow: hidden;
-    }
-
-    article div:last-child p:nth-child(2) {
-        margin-bottom: $sm-font;
-    }
-
-    article div:last-child p:nth-child(2) span {
-        color: darken($tertiary-color, 5%);
-        
+                p:nth-child(2) span {
+                    color: darken($tertiary-color, 5%);
+                }
+                
+                a:last-child {
+                    color: $link-color;
+                    font-weight: 200;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
 
