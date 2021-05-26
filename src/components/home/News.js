@@ -17,13 +17,13 @@ const News = () => (
                     <img src="https://firebasestorage.googleapis.com/v0/b/fedacad-927ea.appspot.com/o/website-gallery%2FDSCN0860.JPG?alt=media&token=23d8ac8f-d139-4260-b087-a4f1c61846ae" alt="Federal Government Academy Suleja, Entrance Examination" />
                 </div>
                 <div>
-                    <a href="https://firebasestorage.googleapis.com/v0/b/fedacad-927ea.appspot.com/o/FGA%20Admission%20List.pdf?alt=media&token=89ddd05c-1285-491c-aa1a-a1a3a3e3d6b8" target="_blank" rel="noopener noreferrer">
+                    <Link to="/news/#admission-list-2021/2022">
                         <TextClamp 
                             text="2021/2022 Admission into JSS1"
                             lines={2}
                             className="title"
                         />
-                    </a>
+                    </Link>
                     <p><span className="mdi mdi-calendar"></span>&nbsp;&nbsp;&nbsp;23rd May, 2021</p>
                     <p>Application into Federal Government Academy, Suleja for admission into JSS1 is ongoing. Interested candidates should click "Read More" to proceed.</p>
                     <Link to="/news/#admission-list-2021/2022">Read More</Link>
