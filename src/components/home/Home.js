@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import Slider from './Slider';
 import Welcome from './Welcome';
@@ -9,6 +10,7 @@ import About from './About';
 import Administrators from './Administrators';
 const Home = () => (
     <>
+        <Helmet><title>Home - Federal Government Academy Centre for the Gifted and Talented Suleja, Niger State</title></Helmet>
         <Slider />
         <Welcome />
         <Principal />

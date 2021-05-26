@@ -12,6 +12,21 @@ const News = () => (
             title="Latest News" 
         />
         <section className="news">
+            <article id="admission-list-2021/2022">
+                <h5>
+                    2021/2022 Admission into JSS1
+                </h5>
+                <h6>Candidates should please follow the steps below:</h6>
+                <ol>
+                    <li>Visit The ministry <a href="https://education.gov.ng/" rel="noopener noreferrer" target="_blank">website</a></li>
+                    <li>Click on FGA Suleja Admission</li>
+                    <li>Fill the Registration <a href="https://www.fmeposting.com.ng/web/sulejaForm" rel="noopener noreferrer" target="_blank">Form</a> and Submit</li>
+                    <li>Print Out a Copy of the Completed Registration Form</li>
+                    <li>Proceed to Pay the Sum of 1,500 on Remita</li>
+                    <li>Get a Printout of the Remita Payment Receipt</li>
+                    <li>You are required to come to the Exam Centre with the Print Out of your Registration Form and the Remita Payment Receipt</li>
+                </ol>
+            </article>
             <article id="admission-list">
                 <h5>
                     2020/2021 Admission List
