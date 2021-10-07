@@ -12,6 +12,15 @@ const News = () => (
             title="Latest News" 
         />
         <section className="news">
+            <article id="admission-list-result-2021/2022">
+                <h5>
+                    2021/2022 Admission Result for Successful Candidates into JSS1
+                </h5>
+                <h6>Congratulations to all the successful candidates. To access the list, please click the link below:</h6>
+                <p>
+                    Admission <a href="https://firebasestorage.googleapis.com/v0/b/fedacad-927ea.appspot.com/o/FGA%20ADMISSION%20LIST.pdf?alt=media&token=c42a4d83-9106-400e-8f27-582df7bc1cfe" rel="noopener noreferrer" target="_blank">Result</a>
+                </p>
+            </article>
             <article id="admission-list-2021/2022">
                 <h5>
                     2021/2022 Admission into JSS1

@@ -12,6 +12,23 @@ const News = () => (
         <h4>News, Events, and updates</h4>
         <p>Stay up to date with happenings related to the school</p>
         <div className="news-container">
+        <article>
+                <div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/fedacad-927ea.appspot.com/o/website-gallery%2FDSCN0860.JPG?alt=media&token=23d8ac8f-d139-4260-b087-a4f1c61846ae" alt="Federal Government Academy Suleja, Entrance Examination" />
+                </div>
+                <div>
+                    <Link to="/news/#admission-list-result-2021/2022">
+                        <TextClamp 
+                            text="2021/2022 Admission Result into JSS1 Out Now"
+                            lines={2}
+                            className="title"
+                        />
+                    </Link>
+                    <p><span className="mdi mdi-calendar"></span>&nbsp;&nbsp;&nbsp;7th October, 2021</p>
+                    <p>The result of successful candidates into JSS1 is out. Click "Read More" to view the list.</p>
+                    <Link to="/news/#admission-list-result-2021/2022">Read More</Link>
+                </div>
+            </article>
             <article>
                 <div>
                     <img src="https://firebasestorage.googleapis.com/v0/b/fedacad-927ea.appspot.com/o/website-gallery%2FDSCN0860.JPG?alt=media&token=23d8ac8f-d139-4260-b087-a4f1c61846ae" alt="Federal Government Academy Suleja, Entrance Examination" />
